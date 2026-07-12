@@ -6,6 +6,8 @@ A simple Bash script for scraping publicly available email addresses and phone n
 
 - Email scraping
 - Phone number scraping
+- ID scraping
+- Cookie scraping
 - Full scan mode
 - Colored terminal output
 - Timestamped logging
@@ -32,13 +34,13 @@ cd web-scraper
 Make the script executable:
 
 ```bash
-chmod +x web-scraper.sh
+chmod +x web-scraper
 ```
 
 ## Usage
 
 ```
-./web-scraper.sh <option> <target>
+./web-scraper <option> <target>
 ```
 
 ### Options
@@ -47,8 +49,11 @@ chmod +x web-scraper.sh
 |---------|-------------|
 | `-e` | Scrape email addresses |
 | `-p` | Scrape phone numbers |
+| `-i` | Scrape IDs |
+| `-c` | Scrape cookies |
 | `-full` | Perform both scans |
 | `-h` | Show help/banner |
+
 
 ### Examples
 
