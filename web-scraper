@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+# Simple Web scraper made in Bash.
+# Version: 1.2
+# Author: Wein Vade
+# License: MIT
+# This script comes with no warranty.
 
 
   SCRIPT_NAME="web-scraper"
@@ -105,7 +110,7 @@ log "$OUTPUT"
 print_success
 }
 
-cookies_scrap() {
+cookie_scrap() {
 
 printf "${YELLOW}[*] Cookie scraping started..${NC}\n"
 local OUTPUT=$(curl -v "$TARGET" >/dev/null | grep -i set-cookie | awk '{ print $1 }' || { error_log "[!] Error while searching for cookies."; exit 1; } )
@@ -118,7 +123,7 @@ full_scan() {
 phone_scrap
 email_scrap
 id_scrap
-cookies_scrap
+cookie_scrap
 }
 
 
