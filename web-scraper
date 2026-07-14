@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 
-
+# Simple Web scraper made in Bash.
+# Version: 1.2
+# Author: Wein Vade
+# License: MIT
+# This script comes with no warranty.
 
 
   SCRIPT_NAME="web-scraper"
